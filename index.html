@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #4da3ff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+
+      .ad-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+        width: 100%;
+      }
+
+      .ad-banner iframe {
+        display: block;
+        margin: 0 auto;
+        border: none;
+        max-width: 100%;
+        height: 60px;
+      }
+
+      /* 🔹 Side ads (left + right) */
+      .side-ad {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 160px;
+        height: 600px;
+        z-index: 999;
+      }
+      .side-ad.left {
+        left: 10px;
+      }
+      .side-ad.right {
+        right: 10px;
+      }
+
+      .wrapper {
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+      }
+
+      /* 🔹 মোবাইলে side ads লুকানোর জন্য */
+      @media (max-width: 768px) {
+        .side-ad {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- 🔸 উপরের বিজ্ঞাপন -->
+    <div class="ad-banner">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'b0ef7a114f4d9859ee158c183ae438ca',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/b0ef7a114f4d9859ee158c183ae438ca/invoke.js"></script>
+    </div>
+
+    <!-- 🔸 Clock Section -->
+    <div class="wrapper">
+      <img src="./clock.svg" alt="clock" width="100">
+      <h1>00:00:00 PM</h1>
+      <div class="content">
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <button>Set Alarm</button>
+    </div>
+
+    <!-- 🔸 নিচের বিজ্ঞাপন -->
+    <div class="ad-banner">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'b0ef7a114f4d9859ee158c183ae438ca',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/b0ef7a114f4d9859ee158c183ae438ca/invoke.js"></script>
+    </div>
+
+    <!-- 🔸 ডান পাশের বিজ্ঞাপন -->
+    <div class="side-ad right">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : '46852966c96d125ee1326e132febab4c',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/46852966c96d125ee1326e132febab4c/invoke.js"></script>
+    </div>
+
+    <!-- 🔸 বাম পাশের বিজ্ঞাপন -->
+    <div class="side-ad left">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : '46852966c96d125ee1326e132febab4c',
+          'format' : 'iframe',
+          'height' : 600,
+          'width' : 160,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/46852966c96d125ee1326e132febab4c/invoke.js"></script>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
